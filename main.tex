@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Kartik S} \\ \vspace{1pt}
+    Bengaluru, Karnataka 560066 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 8296149001 ~ \href{mailto:kartikshiv03@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kartikshiv03@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/kartik26/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}  ~
+    \href{https://github.com/kartik2607}{\raisebox{-0.2\height}\faGithub\ \underline{Github}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\small HAL, Mission and Combat Systems Research and Design Centre}{November 2023 -- December 2023}
+      {R\&D Intern}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Researched the feasibility of using Proximal Policy Optimization (PPO) in reinforcement learning for autonomous aircraft control, utilizing the Tensorforce framework to train agents and optimize takeoff strategies, achieving a takeoff distance of 2,400m on a 5,000m runway.}
+        \resumeItem{Analyzed reinforcement learning methods for aircraft control, demonstrating the effectiveness of RL in handling complex scenarios and optimizing takeoff performance through reward-based training.}
+        \resumeItem{\textbf{Tools \& Technologies :} Python, Tensorforce, NumPy, Pandas, Matplotlib}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\small Quest Global}{August 2023 -- November 2023}
+      {Software Intern}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Developed a PoC using Generative AI to generate embedded code from natural language descriptions. Perpared a dataset of over 1,000 entries and achieved 90\% accuracy through PEFT and LoRA fine-tuning.}
+        \resumeItem{Built a TCP/IP client-server application for real-time inferencing, integrating a Streamlit UI for user interaction and demonstrating up to 50\% potential reduction in software development cycles.}
+        \resumeItem{Showcased Generative AI's capability to streamline software development, by enhancing code generation accuracy and efficiency.}
+        \resumeItem{\textbf{Tools \& Technologies :} Python, Torch, Transformers (Hugging Face), PEFT, LoRA, TRL, Streamlit, TCP/IP}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{\href{https://github.com/kartik2607/Secure-Password-Manager}{Secure Password Manager}} $|$ \emph{Python, MySql}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a local password manager with AES-256 encryption, implementing secure storage and retrieval using a master password and device secret.}
+            \resumeItem{Designed a user-friendly CLI for adding, retrieving, and generating passwords, including automatic clipboard copying and advanced search functionalities.}
+          \resumeItemListEnd
+        \vspace{-20pt}
+         \resumeProjectHeading
+          {\textbf{\href{https://github.com/kartik2607/Voice-Activated-Personal-Assistant}{Voice Activated Personal Assistant}} $|$ \emph{Python, Speech Recognition}}{November 2023}
+          \resumeItemListStart
+            \resumeItem{Built a voice activated personal assistant using pyttsx3, and SpeechRecognition to handle 7+ tasks like opening apps, fetching movie details, reading the news, google search, sending emails and many more.}
+            \resumeItem{Integrated WolframAlpha, weather, and various other APIs for real-time mathematical calculations, weather details and other tasks enhancing functionality and user experience.}
+          \resumeItemListEnd
+        \vspace{-20pt}
+      \resumeProjectHeading
+        {{\textbf{\href{https://github.com/kartik2607/Sudoku-Solver}{Sudoku Solver}}} $|$ \emph{C++}}{January 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented a Sudoku solver using a backtracking algorithm, efficiently solving 9x9 puzzles by adhering to Sudoku constraints with 100\% accuracy.}
+          \resumeItemListEnd
+        \vspace{-20pt}
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/kartik2607/EzPay}{EzPay}} $|$ \emph{Python, MySql, NumPy, Tkinter, Matplotlib}}{February 2022}
+          \resumeItemListStart
+            \resumeItem{Created a payments application with robust analytics, supporting many users and categorizing various transactions to provide detailed financial insights and saving comparisons.}
+            \resumeItem{Implemented robust data management using a protected database to ensure the integrity and confidentiality of user accounts and transaction history.}
+            \resumeItem{Created a user-friendly interface and transaction tracking, enhancing financial management and improving savings by up to 30\% through detailed expenditure graphs and analytics.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology, Vellore, Tamil Nadu}{September 2021 -- June 2025}
+      {Btech in Computer Science and Engineering with Specialization in Information Secuirty}{\textbf{\small CGPA: 8.88}}
+    \resumeSubheading
+      {Deens Academy, Bengaluru, Karnataka}{April 2019 -- May 2021}
+      {Class XII (CBSE)}{\textbf{\small Percentage: 93\%}}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures And Algorithm
+                \item\small DBMS
+                \item\small OOPS
+                \item Operating Systems
+                \item Computer Networks
+                \item Information Security
+                \item Data Privacy
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, Java, MySQL} \\
+     \textbf{Tools}{: VS Code, Jupyter Notebook, Anaconda, Burpsuite} \\
+     \textbf{Technologies/Frameworks}{: Numpy, Panda, Huggingface, PEFT, LoRA, Linux, GitHub} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+\end{document}
